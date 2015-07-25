@@ -6,11 +6,11 @@ $(document).ready(function(){
     $(".main-navbar-container").fadeToggle(100);
   });
 // project link activation
-  $(".project-1").on('click',function(){
+  $(".t-logo").on('click',function(){
     window.open('http://tendigi.com/');
     return false;
   });
-  $(".project-2").on('click',function(){
+  $(".f-logo").on('click',function(){
     window.open('http://multiversestudios.nyc/clients/hd/index');
     return false;
   });

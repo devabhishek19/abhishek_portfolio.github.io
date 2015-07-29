@@ -1,7 +1,9 @@
 body,html{
   margin: 0;
   padding: 0;
-  font-family: 'Julius Sans One', sans-serif  !important;
+  /*font-family: 'Julius Sans One', sans-serif  !important;*/
+ 
+font-family: 'Raleway', sans-serif !important;  
   font-weight: 300 !important;
   background: url('../images/newyorkcity.jpg')center no-repeat fixed;
   background-size: cover;
@@ -22,7 +24,7 @@ body,html{
   left: 23%;
   width: 700px;
   line-height: 50px;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(232,116,97,.8);
 }
 .orderlist li{
   position: relative;
@@ -30,15 +32,15 @@ body,html{
 
 }
 .orderlist li a{
-  color: black;
+  color: white;
   position: relative;
-  padding:13px 25px; 
+  padding:14px 25px; 
   font-size: 1.5em;
   text-decoration: none;                                                                                                                                             d                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 }
 .orderlist li a:hover{
-  color: white;
-  background-color: rgba(0,0,0,.5);
+  color: black;
+  background-color: rgba(255,255,255,.5);
 }
 .menu-button{
 
@@ -47,7 +49,7 @@ body,html{
   color: white;
   position: absolute;
   left: 15px;
-  top: 15px;
+  top: 10px;
   height: 30px;
   width: 30px;
   z-index: 20;
@@ -121,7 +123,7 @@ body,html{
   color: rgba(0,0,0,.6);
   text-align: center;
   padding-top: 50px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgba(0,0,0,.2);
   /*padding-bottom: 50px;*/
 }
 .about_section h1{
@@ -140,7 +142,7 @@ body,html{
   padding:50px 0px;
   text-align: center;
   color: white;
-  border-top: 1px solid white;
+  border-top: 1px solid rgba(0,0,0,.2);
 }
 .project h1{
   font-size: 4em;
@@ -162,6 +164,7 @@ body,html{
   height: 400px;
   font-size: 1.5em;
 }
+
 .tendigi{
   padding: 50px 0px;
 }
@@ -189,8 +192,8 @@ body,html{
   color: lightgrey;
   text-align: center;
   font-size: 3em;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid white;
+  border-top: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(0,0,0,.2);
   padding-top: 10px;
 }
 .attachments a{
@@ -199,7 +202,7 @@ body,html{
 }
 .attachments a:hover{
   text-decoration: none;
-  color: orange;
+  color: #A9DEF9;
 }
 
 /*footer css*/
@@ -207,7 +210,7 @@ body,html{
 .footer{
   padding-top: 50px;
   margin-bottom: 0;
-  background-color: white;
+  background-color: grey;
   color: rgba(0,0,0,.89);
   border-top: 1px solid rgba(0,0,0,.1);
 
@@ -223,11 +226,12 @@ body,html{
   font-size: 2em;
 }
 .email_phone a{
+  color: lightgrey;
   text-decoration: none;
 }
 .email_phone a:hover{
   text-decoration: none;
-  color: #32B76F;
+  color: lime;
 }
 .social{
   text-align: center;
@@ -242,7 +246,13 @@ body,html{
   border-radius: 50%;
 }
 .social img:hover{
-  background-color: rgba(55,63,81,.5);
+  /*background-color: rgba(55,63,81,.5);*/
+  background-color: rgba(255,255,255,.5);
+}
+.hr_line{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,.2)
 }
 .copyright{
   text-align: center;
@@ -255,24 +265,44 @@ body,html{
 }
 .bktt{
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   display: none;
 }
 
 
 @media all and (max-width: 996px){
+  .main-navbar-container{
+    position: relative;
+    height: auto;
+    margin-bottom: -10px;
+  }
   .orderlist{
     position: relative;
     list-style: none;
     line-height: 50px;
     width: 100%;
     left: 0;
-    background-color: rgba(255,255,255,.8);
+    /*background-color: rgba(0,0,0,.8);*/
+    background-color: rgba(232,116,97,.95);
     text-align: center;
   }
-  .orderlist li{
-    /*display: block;*/
+  .orderlist li a{
+    /*color: white;*/
+    }
+  .menu-button{
+  }
+  .cover-container{
+      /*top:-10px;*/
+  }
+  .f-detail{
+    line-height: 50px;
+    font-size: 1.5em;
+  }
+
+  .t-detail{
+    line-height: 50px;
+    font-size: 1.5em;
   }
 }
 @media all and (max-width: 768px){
@@ -283,7 +313,7 @@ body,html{
     line-height: 50px;
     width: 100%;
     left: 0;
-    background-color: rgba(255,255,255,.8);
+    background-color: rgba(232,116,97,.95);
     text-align: center;
   }
   .orderlist li{
@@ -293,18 +323,35 @@ body,html{
     margin-top: 0px;
   }
   .name{
+    position: absolute;
+    top: 80px;
+    color: rgba(255,255,255,.5);
     font-size: 2em;
   }
+  .about_section p{
+    line-height: 40px;
+    font-size: 1.5em;
+  }
+  .f-detail{
+    line-height: 40px;
+    font-size: 1.5em;
+  }
 
+  .t-detail{
+    line-height: 40px;
+    font-size: 1.5em;
+  }
+  .future_project_detail h2{
+    font-size: 1.8em ;
+  }
 }
-@media all and (max-width: 480px){
+/*@media all and (max-width: 480px){
   
   .orderlist{
     position: relative;
     list-style: none;
     line-height: 50px;
     width: 100%;
-    /*top: 0px;*/
     left: 0px;
     background-color: rgba(255,255,255,.8);
     text-align: center;
@@ -321,7 +368,7 @@ body,html{
   .about_section p{
     line-height: 40px;
     font-size: 1.5em;
-  }
+  }*/
  
 }
 

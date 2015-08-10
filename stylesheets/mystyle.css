@@ -331,7 +331,10 @@ font-family: 'Raleway', sans-serif !important;
     position: absolute;
     top: 80px;
     color: rgba(255,255,255,.5);
-    font-size: 2em;
+    font-size: 1.5em;
+  }
+  .title{
+    font-size: 1.8em;
   }
   .about_section p{
     line-height: 40px;
